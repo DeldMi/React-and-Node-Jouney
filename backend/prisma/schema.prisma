@@ -1,11 +1,12 @@
-generator client {
-  provider = "prisma-client-js"
-}
-
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+generator client {
+  provider = "prisma-client-js"
+}
+
 
 model Trip {
   id           String   @id @default(uuid())
@@ -14,6 +15,6 @@ model Trip {
   ends_at      DateTime
   is_confirmed Boolean  @default(false)
   created_at   DateTime @default(now())
-  
+
   @@map("trip")
 }
