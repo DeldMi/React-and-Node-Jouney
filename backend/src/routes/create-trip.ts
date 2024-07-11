@@ -1,9 +1,10 @@
 import { FastifyInstance } from "fastify";
+import { ZodTypeProvider } from "fastify-type-provider-zod";
 import z from "zod";
 
 
 export async function createTrip(app: FastifyInstance) {
-    app.post('/trips', async () => {
+    app.withTypeProvider<ZodTypeProvider>().post('/trips', async () => {
         return 'Hello Word!';
     })
 }
