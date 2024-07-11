@@ -1,4 +1,5 @@
 import { FastifyInstance } from "fastify";
+import z from "zod";
 
 
 export async function createTrip(app: FastifyInstance) {
