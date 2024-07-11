@@ -17,7 +17,7 @@ export async function createTrip(app: FastifyInstance) {
                 ends_at: z.coerce.date(),
                 owner_name: z.string(),
                 owner_email: z.string().email(),
-                
+
             })
         }
     }, async (req, rep) => {
@@ -27,26 +27,39 @@ export async function createTrip(app: FastifyInstance) {
             throw new Error('Invalid trip start date.')
         }
 
-        if ( dayjs(ends_at).isBefore(starts_at)) {
+        if (dayjs(ends_at).isBefore(starts_at)) {
             throw new Error('Invalid trip and date.')
         }
+
+        // await prisma.$transaction(tx=>{
+
+        // })
 
         const trip = await prisma.trip.create({
             data: {
                 destination,
                 starts_at,
                 ends_at,
+                participants: {
+                    create: {
+                        email: owner_email,
+                        name: owner_name,
+                        is_owner: true,
+                        is_confirmed: true,
+                    },
+                }
             }
         });
+
 
         const mail = await getMailClient();
 
         const massage = await mail.sendMail({
             from: {
                 name: 'Equipe plann.er',
-                address:'test@test.com',
+                address: 'test@test.com',
             },
-            to : {
+            to: {
                 name: owner_name,
                 address: owner_email,
             },
@@ -55,7 +68,7 @@ export async function createTrip(app: FastifyInstance) {
         });
 
         console.log(nodemailer.getTestMessageUrl(massage));
-        
+
         return { tripId: trip.id };
     });
 }

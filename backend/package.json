@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "clear && npx tsx watch src/server.ts"
+    "dev": "clear && npx tsx watch src/server.ts",
+    "migrate": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "André Felipe",
