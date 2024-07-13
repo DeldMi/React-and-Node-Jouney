@@ -1,0 +1,610 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  
+[error occurred during error reporting (printing exception/signal name), id 0x7]
+
+, pid=1281012, tid=0x00007cc4b9f28640
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_411) (build 1.8.0_411-b09)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.411-b09 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# 
+[error occurred during error reporting (printing problematic frame), id 0x7]
+
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007cc4d4500800):  
+[error occurred during error reporting (printing current thread), id 0x7]
+
+siginfo: si_signo: 7 (SIGBUS), si_code: 2 (BUS_ADRERR), si_addr: 0x00007cc4d400cc20
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007cc4d4500800, RCX=0x0000000000000001, RDX=0x0000000000000001
+RSP=0x00007cc4b9f26cd0, RBP=0x00007cc4b9f26cf0, RSI=0x00007cc4d4500800, RDI=0x00007cc4d400cc20
+R8 =0x00007cc4d4500800, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x00007cc4d400cc20, R13=0x00007cc4d9fa68cc, R14=0x00007cc4903b5e40, R15=0x00007cc4d9cfc2c5
+RIP=0x00007cc4d9ad544a, EFLAGS=0x0000000000010202, CSGSFS=0x002b000000000033, ERR=0x0000000000000006
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007cc4b9f26cd0)
+0x00007cc4b9f26cd0:   00007cc4d400cc20 00007cc4d4500800
+0x00007cc4b9f26ce0:   00007cc4d400cc20 00007cc4903b5e40
+0x00007cc4b9f26cf0:   00007cc4b9f26d10 00007cc4d9ad5e26
+0x00007cc4b9f26d00:   00007cc4d4500800 00007cc4d400cc10
+0x00007cc4b9f26d10:   00007cc4b9f26e20 00007cc4d96f0eef
+0x00007cc4b9f26d20:   00007cc4d9d2ce80 40e05f8568da591f
+0x00007cc4b9f26d30:   00007cc4d9d2ce48 0000003000000010
+0x00007cc4b9f26d40:   00007cc4b9f26e30 00007cc4b9f26d50
+0x00007cc4b9f26d50:   00007cc4b9f26e40 00007cc4b9f26d60
+0x00007cc4b9f26d60:   00007cc4d9cfc3c2 00007cc4d9cfc2c5
+0x00007cc4b9f26d70:   00007cc4c53f3d6c 00007cc4903b5e40
+0x00007cc4b9f26d80:   00007cc4c53f3450 00007cc4d9ba19fa
+0x00007cc4b9f26d90:   00007cc4b9f26f60 00007cc4d9ba19fa
+0x00007cc4b9f26da0:   000000000000001a 0000000000000008
+0x00007cc4b9f26db0:   00007cc4900f5b80 00007cc4bbeddbd0
+0x00007cc4b9f26dc0:   00007cc4b9f26de0 00007cc4d9c209fd
+0x00007cc4b9f26dd0:   000000000000001a 00007cc4903b5e40
+0x00007cc4b9f26de0:   00007cc4b9f26e30 00007cc4d9aa97a2
+0x00007cc4b9f26df0:   00007cc4903b5e20 0000001fb9f26fd0
+0x00007cc4b9f26e00:   00007cc4b9f27630 00007cc4bc3d97f0
+0x00007cc4b9f26e10:   00007cc4d4500800 0000000000000013
+0x00007cc4b9f26e20:   00007cc4b9f27630 00007cc4d96edcde
+0x00007cc4b9f26e30:   000000000000007c 00007cc4d96edc7f
+0x00007cc4b9f26e40:   000000076e3123e0 0000000000000001
+0x00007cc4b9f26e50:   0000000000000000 00007cc4b9f26e48
+0x00007cc4b9f26e60:   00007cc4bc63bd77 00007cc4b9f26ee8
+0x00007cc4b9f26e70:   00007cc4bc63c100 0000000000000000
+0x00007cc4b9f26e80:   00007cc4bc63be28 0000000000000000
+0x00007cc4b9f26e90:   00007cc4b9f26ee0 00000000000003d8
+0x00007cc4b9f26ea0:   ffffffffc5008382 00007cc4b9f26f90
+0x00007cc4b9f26eb0:   00007cc49804dba0 00007cc49804dbb0
+0x00007cc4b9f26ec0:   00007cc49804dba0 00007cc49804df88 
+
+Instructions: (pc=0x00007cc4d9ad544a)
+0x00007cc4d9ad542a:   41 83 7d 00 01 48 89 f3 75 0a 48 8d 05 2d 65 4c
+0x00007cc4d9ad543a:   00 0f b6 10 b9 01 00 00 00 31 c0 80 fa 00 74 01
+0x00007cc4d9ad544a:   f0 49 0f b1 0c 24 be 01 00 00 00 48 89 c1 48 85
+0x00007cc4d9ad545a:   c0 75 1a eb 49 90 48 89 c8 40 80 fe 00 74 01 f0 
+
+Register to memory mapping:
+
+RAX=
+[error occurred during error reporting (printing register info), id 0x7]
+
+Stack: [0x00007cc4b9e29000,0x00007cc4b9f29000],  sp=0x00007cc4b9f26cd0,  free space=1015k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+[error occurred during error reporting (printing native stack), id 0x7]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+v  blob 0x00007cc4c5045739
+J 1158 C2 java.net.SocketInputStream.read([BIII)I (328 bytes) @ 0x00007cc4c53f3d6c [0x00007cc4c53f35e0+0x78c]
+J 1163 C2 java.net.SocketInputStream.read()I (44 bytes) @ 0x00007cc4c53f4ac0 [0x00007cc4c53f4a00+0xc0]
+j  org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(Lorg/eclipse/lsp4j/jsonrpc/MessageConsumer;)V+38
+j  org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run()V+30
+
+[error occurred during error reporting (printing Java stack), id 0x7]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007cc4d4010000 
+[error occurred during error reporting (printing all threads), id 0x7]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000006c8200000, size: 3966 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 74240K, used 28180K [0x000000076d600000, 0x0000000772880000, 0x00000007c0000000)
+  eden space 64000K, 44% used [0x000000076d600000,0x000000076f185180,0x0000000771480000)
+  from space 10240K, 0% used [0x0000000771e80000,0x0000000771e80000,0x0000000772880000)
+  to   space 10240K, 0% used [0x0000000771480000,0x0000000771480000,0x0000000771e80000)
+ ParOldGen       total 169472K, used 0K [0x00000006c8200000, 0x00000006d2780000, 0x000000076d600000)
+  object space 169472K, 0% used [0x00000006c8200000,0x00000006c8200000,0x00000006d2780000)
+ Metaspace       used 12984K, capacity 13272K, committed 13440K, reserved 1060864K
+  class space    used 1463K, capacity 1550K, committed 1664K, reserved 1048576K
+
+Card table byte_map: [0x00007cc4d8498000,0x00007cc4d8c58000] byte_map_base: 0x00007cc4d4e57000
+
+Marking Bits: (ParMarkBitMap*) 0x00007cc4d9faa6a0
+ Begin Bits: [0x00007cc4bcee6000, 0x00007cc4c0cde000)
+ End Bits:   [0x00007cc4c0cde000, 0x00007cc4c4ad6000)
+
+Polling page: 0x00007cc4da333000
+
+CodeCache: size=245760Kb used=4112Kb max_used=4112Kb free=241647Kb
+ bounds [0x00007cc4c5000000, 0x00007cc4c5410000, 0x00007cc4d4000000]
+ total_blobs=1553 nmethods=1193 adapters=274
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 20573,977 Thread 0x00007cc4d40d1000 1189       3       java.lang.reflect.Method::invoke (62 bytes)
+Event: 20573,981 Thread 0x00007cc4d40d1000 nmethod 1189 0x00007cc4c54044d0 code [0x00007cc4c5404680, 0x00007cc4c5404be8]
+Event: 20573,981 Thread 0x00007cc4d40d1000 1190       3       sun.reflect.DelegatingMethodAccessorImpl::invoke (10 bytes)
+Event: 20573,983 Thread 0x00007cc4d40d1000 nmethod 1190 0x00007cc4c5404dd0 code [0x00007cc4c5404f40, 0x00007cc4c5405168]
+Event: 20583,593 Thread 0x00007cc4d40d1000 1191       1       org.eclipse.lsp4j.TextDocumentIdentifier::getUri (5 bytes)
+Event: 20583,594 Thread 0x00007cc4d40d1000 nmethod 1191 0x00007cc4c5405250 code [0x00007cc4c54053a0, 0x00007cc4c54054b0]
+Event: 20584,836 Thread 0x00007cc4d40d1000 1192       3       org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapterFactory$Adapter::fromJson (30 bytes)
+Event: 20584,838 Thread 0x00007cc4d40d1000 nmethod 1192 0x00007cc4c5405510 code [0x00007cc4c54056a0, 0x00007cc4c5405bb8]
+Event: 20584,838 Thread 0x00007cc4d40d1000 1193       3       org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapterFactory$Adapter::isNullOrVoidType (16 bytes)
+Event: 20584,838 Thread 0x00007cc4d40d1000 nmethod 1193 0x00007cc4c5405d50 code [0x00007cc4c5405ea0, 0x00007cc4c5406090]
+
+GC Heap History (0 events):
+No events
+
+
+[error occurred during error reporting (printing ring buffers), id 0x7]
+
+Dynamic libraries:
+6c8200000-6d2780000 rw-p 00000000 00:00 0 
+6d2780000-76d600000 ---p 00000000 00:00 0 
+76d600000-772880000 rw-p 00000000 00:00 0 
+772880000-7c0000000 ---p 00000000 00:00 0 
+7c0000000-7c01a0000 rw-p 00000000 00:00 0 
+7c01a0000-800000000 ---p 00000000 00:00 0 
+63dd85d9f000-63dd85da0000 r-xp 00000000 08:07 1192635                    /usr/java/jre1.8.0_411/bin/java
+63dd85da0000-63dd85da1000 r--p 00000000 08:07 1192635                    /usr/java/jre1.8.0_411/bin/java
+63dd85da1000-63dd85da2000 rw-p 00001000 08:07 1192635                    /usr/java/jre1.8.0_411/bin/java
+63dd876a7000-63dd876e8000 rw-p 00000000 00:00 0                          [heap]
+7cc47c000000-7cc47c3d7000 rw-p 00000000 00:00 0 
+7cc47c3d7000-7cc480000000 ---p 00000000 00:00 0 
+7cc480fff000-7cc484000000 rw-p 00000000 00:00 0 
+7cc484000000-7cc484021000 rw-p 00000000 00:00 0 
+7cc484021000-7cc488000000 ---p 00000000 00:00 0 
+7cc488000000-7cc488021000 rw-p 00000000 00:00 0 
+7cc488021000-7cc48c000000 ---p 00000000 00:00 0 
+7cc48c000000-7cc48c2b7000 rw-p 00000000 00:00 0 
+7cc48c2b7000-7cc490000000 ---p 00000000 00:00 0 
+7cc490000000-7cc490480000 rw-p 00000000 00:00 0 
+7cc490480000-7cc494000000 ---p 00000000 00:00 0 
+7cc494000000-7cc494021000 rw-p 00000000 00:00 0 
+7cc494021000-7cc498000000 ---p 00000000 00:00 0 
+7cc498000000-7cc498313000 rw-p 00000000 00:00 0 
+7cc498313000-7cc49c000000 ---p 00000000 00:00 0 
+7cc49c000000-7cc49c021000 rw-p 00000000 00:00 0 
+7cc49c021000-7cc4a0000000 ---p 00000000 00:00 0 
+7cc4a0000000-7cc4a0021000 rw-p 00000000 00:00 0 
+7cc4a0021000-7cc4a4000000 ---p 00000000 00:00 0 
+7cc4a4000000-7cc4a4021000 rw-p 00000000 00:00 0 
+7cc4a4021000-7cc4a8000000 ---p 00000000 00:00 0 
+7cc4a8000000-7cc4a8021000 rw-p 00000000 00:00 0 
+7cc4a8021000-7cc4ac000000 ---p 00000000 00:00 0 
+7cc4ac000000-7cc4ac021000 rw-p 00000000 00:00 0 
+7cc4ac021000-7cc4b0000000 ---p 00000000 00:00 0 
+7cc4b0000000-7cc4b0021000 rw-p 00000000 00:00 0 
+7cc4b0021000-7cc4b4000000 ---p 00000000 00:00 0 
+7cc4b4000000-7cc4b4021000 rw-p 00000000 00:00 0 
+7cc4b4021000-7cc4b8000000 ---p 00000000 00:00 0 
+7cc4b99e6000-7cc4b99f9000 r--s 00353000 08:07 1192732                    /usr/java/jre1.8.0_411/lib/resources.jar
+7cc4b99f9000-7cc4b9b79000 rw-p 00000000 00:00 0 
+7cc4b9b79000-7cc4b9bf9000 ---p 00000000 00:00 0 
+7cc4b9bf9000-7cc4b9bfa000 r--s 0014d000 08:12 1090743                    /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-pt-3.8.0/lib/hunspell-native-libs-2.9.jar
+7cc4b9bfa000-7cc4b9bfd000 r--s 0039e000 08:12 1090788                    /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-pt-3.8.0/lib/language-pt-3.8.jar
+7cc4b9bfd000-7cc4b9bff000 r--s 00003000 08:12 971650                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-anchorlink-0.19.1.jar
+7cc4b9bff000-7cc4b9c00000 r--s 00004000 08:12 971618                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/annotations-12.0.jar
+7cc4b9c00000-7cc4b9c03000 r--s 00011000 08:12 971759                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/segment-2.0.0.jar
+7cc4b9c03000-7cc4b9e03000 rw-p 00000000 00:00 0 
+7cc4b9e03000-7cc4b9e0e000 r--s 00116000 08:07 1192895                    /usr/java/jre1.8.0_411/lib/ext/localedata.jar
+7cc4b9e0e000-7cc4b9e29000 r--s 00394000 08:07 1192896                    /usr/java/jre1.8.0_411/lib/ext/cldrdata.jar
+7cc4b9e29000-7cc4b9e2c000 ---p 00000000 00:00 0 
+7cc4b9e2c000-7cc4b9f29000 rw-p 00000000 00:00 0 
+7cc4b9f29000-7cc4b9f40000 r-xp 00000000 08:07 1192760                    /usr/java/jre1.8.0_411/lib/amd64/libnet.so
+7cc4b9f40000-7cc4b9f41000 r--p 00016000 08:07 1192760                    /usr/java/jre1.8.0_411/lib/amd64/libnet.so
+7cc4b9f41000-7cc4b9f42000 rw-p 00017000 08:07 1192760                    /usr/java/jre1.8.0_411/lib/amd64/libnet.so
+7cc4b9f42000-7cc4b9f54000 r--s 001c8000 08:07 1192731                    /usr/java/jre1.8.0_411/lib/jsse.jar
+7cc4b9f54000-7cc4b9f5a000 r--s 0003e000 08:12 971752                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.lsp4j-0.2.0.jar
+7cc4b9f5a000-7cc4b9f62000 r--s 00045000 08:12 971719                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/junit-4.12.jar
+7cc4b9f62000-7cc4b9f64000 r--s 00008000 08:12 971663                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-spec-example-0.19.1.jar
+7cc4b9f64000-7cc4b9f66000 r--s 00004000 08:12 971668                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-typographic-0.19.1.jar
+7cc4b9f66000-7cc4b9f68000 r--s 00005000 08:12 971659                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-gfm-tasklist-0.19.1.jar
+7cc4b9f68000-7cc4b9f6a000 r--s 00007000 08:12 971658                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-gfm-tables-0.19.1.jar
+7cc4b9f6a000-7cc4b9f7e000 r--s 00119000 08:12 971748                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/openhtmltopdf-core-0.0.1-RC9.jar
+7cc4b9f7e000-7cc4b9f86000 r--s 00062000 08:12 971726                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/lucene-backward-codecs-5.5.3.jar
+7cc4b9f86000-7cc4b9f87000 r--s 00004000 08:12 968127                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/openhtmltopdf-jsoup-dom-converter-0.0.1-RC9.jar
+7cc4b9f87000-7cc4b9f8c000 r--s 00039000 08:12 971625                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/berkeleylm-1.1.2.jar
+7cc4b9f8c000-7cc4b9f8e000 r--s 0000e000 08:12 971639                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/commons-logging-1.2.jar
+7cc4b9f8e000-7cc4b9faf000 r--s 00177000 08:12 971685                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/hppc-0.7.2.jar
+7cc4b9faf000-7cc4b9fb0000 r--s 00007000 08:12 971745                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/morfologik-fsa-builders-2.1.3.jar
+7cc4b9fb0000-7cc4b9fb2000 r--s 00008000 08:12 971673                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-jira-converter-0.19.1.jar
+7cc4b9fb2000-7cc4b9fba000 r--s 0007b000 08:12 971724                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/languagetool-core-3.8.jar
+7cc4b9fba000-7cc4b9fbc000 r--s 00006000 08:12 971657                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-gfm-strikethrough-0.19.1.jar
+7cc4b9fbc000-7cc4b9fbe000 r--s 00010000 08:12 971672                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-formatter-0.19.1.jar
+7cc4b9fbe000-7cc4b9fc0000 r--s 00008000 08:12 971656                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-footnotes-0.19.1.jar
+7cc4b9fc0000-7cc4b9fc1000 r--s 00005000 08:12 971751                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/openhtmltopdf-rtl-support-0.0.1-RC9.jar
+7cc4b9fc1000-7cc4b9fd3000 r--s 0011c000 08:12 971713                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jackson-databind-2.8.4.jar
+7cc4b9fd3000-7cc4b9fd7000 r--s 00021000 08:12 971757                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.xtext.xbase.lib-2.12.0.jar
+7cc4b9fd7000-7cc4b9fd9000 r--s 00003000 08:12 971670                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-yaml-front-matter-0.19.1.jar
+7cc4b9fd9000-7cc4b9fdd000 r--s 00024000 08:12 971716                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jsonic-1.2.11.jar
+7cc4b9fdd000-7cc4b9fdf000 r--s 00003000 08:12 971725                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/languagetool-languageserver-0.0-SNAPSHOT.jar
+7cc4b9fdf000-7cc4b9fe2000 r--s 0000b000 08:12 968124                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jackson-annotations-2.8.0.jar
+7cc4b9fe2000-7cc4b9fe3000 r--s 00003000 08:12 971622                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/autolink-0.6.0.jar
+7cc4b9fe3000-7cc4b9fe5000 r--s 00003000 08:12 971661                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-jekyll-front-matter-0.19.1.jar
+7cc4b9fe5000-7cc4b9fe7000 r--s 00006000 08:12 971669                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-xwiki-macros-0.19.1.jar
+7cc4b9fe7000-7cc4b9fe9000 r--s 00002000 08:12 971651                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-aside-0.19.1.jar
+7cc4b9fe9000-7cc4b9fef000 r--s 0003e000 08:12 971678                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-util-0.19.1.jar
+7cc4b9fef000-7cc4b9ff3000 r--s 00107000 08:12 971715                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jna-4.4.0.jar
+7cc4b9ff3000-7cc4b9ff5000 r--s 00008000 08:12 971680                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-youtrack-converter-0.19.1.jar
+7cc4b9ff5000-7cc4b9ff7000 r--s 00007000 08:12 971649                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-abbreviation-0.19.1.jar
+7cc4b9ff7000-7cc4b9ff9000 r--s 0001c000 08:12 971750                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/openhtmltopdf-pdfbox-0.0.1-RC9.jar
+7cc4b9ff9000-7cc4b9ffb000 r--s 00013000 08:12 971754                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.lsp4j.jsonrpc-0.2.0.jar
+7cc4b9ffb000-7cc4b9ffd000 r--s 00039000 08:12 971671                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-test-util-0.19.1.jar
+7cc4b9ffd000-7cc4ba005000 r--s 0006e000 08:12 971631                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/commons-lang3-3.5.jar
+7cc4ba005000-7cc4ba008000 r--s 00007000 08:12 971653                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-definition-0.19.1.jar
+7cc4ba008000-7cc4ba009000 r--s 00003000 08:12 971746                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/morfologik-speller-2.1.3.jar
+7cc4ba009000-7cc4ba00b000 r--s 00002000 08:12 971660                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-ins-0.19.1.jar
+7cc4ba00b000-7cc4ba00d000 r--s 00002000 08:12 971664                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-superscript-0.19.1.jar
+7cc4ba00d000-7cc4ba00e000 r--s 0000b000 08:12 971654                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-emoji-0.19.1.jar
+7cc4ba00e000-7cc4ba00f000 r--s 00000000 08:12 971648                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-all-0.19.1.jar
+7cc4ba00f000-7cc4ba013000 r--s 00041000 08:12 971712                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jackson-core-2.8.4.jar
+7cc4ba013000-7cc4ba014000 r--s 00005000 08:12 971753                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.lsp4j.generator-0.2.0.jar
+7cc4ba014000-7cc4ba016000 r--s 00002000 08:12 971655                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-escaped-character-0.19.1.jar
+7cc4ba016000-7cc4ba01a000 r--s 001c7000 08:12 971720                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/language-detector-0.6.jar
+7cc4ba01a000-7cc4ba07f000 r--s 00abc000 08:12 968095                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/icu4j-58.1.jar
+7cc4ba07f000-7cc4ba084000 r--s 00024000 08:12 971755                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.xtend.lib-2.12.0.jar
+7cc4ba084000-7cc4ba08a000 r--s 00163000 08:12 971681                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/fontbox-2.0.4.jar
+7cc4ba08a000-7cc4ba093000 r--s 0004f000 08:12 971641                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-0.19.1.jar
+7cc4ba093000-7cc4ba097000 r--s 0000f000 08:12 971756                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/org.eclipse.xtend.lib.macro-2.12.0.jar
+7cc4ba097000-7cc4ba09a000 r--s 00012000 08:12 971666                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-toc-0.19.1.jar
+7cc4ba09a000-7cc4ba09f000 r--s 00034000 08:12 971682                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/gson-2.7.jar
+7cc4ba09f000-7cc4ba0a5000 r--s 00050000 08:12 971717                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/jsoup-1.10.2.jar
+7cc4ba0a5000-7cc4ba0a7000 r--s 00009000 08:12 971674                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/hamcrest-core-1.3.jar
+7cc4ba0a7000-7cc4ba0d6000 r--s 00239000 08:12 971683                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/guava-21.0.jar
+7cc4ba0d6000-7cc4ba0d8000 r--s 00006000 08:12 971742                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/slf4j-api-1.7.6.jar
+7cc4ba0d8000-7cc4ba0da000 r--s 0000c000 08:12 971747                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/morfologik-stemming-2.1.3.jar
+7cc4ba0da000-7cc4ba101000 r--s 0021c000 08:12 971728                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/lucene-core-5.5.3.jar
+7cc4ba101000-7cc4ba102000 ---p 00000000 00:00 0 
+7cc4ba102000-7cc4ba202000 rw-p 00000000 00:00 0 
+7cc4ba202000-7cc4ba205000 ---p 00000000 00:00 0 
+7cc4ba205000-7cc4ba302000 rw-p 00000000 00:00 0 
+7cc4ba302000-7cc4ba303000 ---p 00000000 00:00 0 
+7cc4ba303000-7cc4ba306000 ---p 00000000 00:00 0 
+7cc4ba306000-7cc4ba403000 rw-p 00000000 00:00 0 
+7cc4ba403000-7cc4ba404000 ---p 00000000 00:00 0 
+7cc4ba404000-7cc4ba407000 ---p 00000000 00:00 0 
+7cc4ba407000-7cc4ba504000 rw-p 00000000 00:00 0 
+7cc4ba504000-7cc4ba505000 ---p 00000000 00:00 0 
+7cc4ba505000-7cc4ba508000 ---p 00000000 00:00 0 
+7cc4ba508000-7cc4ba605000 rw-p 00000000 00:00 0 
+7cc4ba605000-7cc4ba608000 ---p 00000000 00:00 0 
+7cc4ba608000-7cc4ba705000 rw-p 00000000 00:00 0 
+7cc4ba705000-7cc4ba759000 r--p 00000000 07:10 189                        /snap/code/164/usr/lib/locale/aa_DJ.utf8/LC_CTYPE
+7cc4ba759000-7cc4ba9d1000 r--p 00000000 07:10 188                        /snap/code/164/usr/lib/locale/aa_DJ.utf8/LC_COLLATE
+7cc4ba9d1000-7cc4ba9d4000 ---p 00000000 00:00 0 
+7cc4ba9d4000-7cc4baad1000 rw-p 00000000 00:00 0 
+7cc4baad1000-7cc4baad4000 ---p 00000000 00:00 0 
+7cc4baad4000-7cc4babd1000 rw-p 00000000 00:00 0 
+7cc4babd1000-7cc4babd2000 ---p 00000000 00:00 0 
+7cc4babd2000-7cc4bbc74000 rw-p 00000000 00:00 0 
+7cc4bbc74000-7cc4bbe56000 r--s 03ed4000 08:07 1192733                    /usr/java/jre1.8.0_411/lib/rt.jar
+7cc4bbe56000-7cc4bc6e7000 rw-p 00000000 00:00 0 
+7cc4bc6e7000-7cc4c4b29000 rw-p 00000000 00:00 0 
+7cc4c4b29000-7cc4c5000000 ---p 00000000 00:00 0 
+7cc4c5000000-7cc4c5410000 rwxp 00000000 00:00 0 
+7cc4c5410000-7cc4d4000000 ---p 00000000 00:00 0 
+7cc4d4000000-7cc4d46fe000 rw-p 00000000 00:00 0 
+7cc4d46fe000-7cc4d8000000 ---p 00000000 00:00 0 
+7cc4d8000000-7cc4d8002000 r--s 00005000 08:12 971564                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-wikilink-0.19.1.jar
+7cc4d8002000-7cc4d8004000 r--s 00004000 08:12 971662                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-jekyll-tag-0.19.1.jar
+7cc4d8004000-7cc4d8094000 rw-p 00000000 00:00 0 
+7cc4d8094000-7cc4d8095000 ---p 00000000 00:00 0 
+7cc4d8095000-7cc4d8195000 rw-p 00000000 00:00 0 
+7cc4d8195000-7cc4d8196000 ---p 00000000 00:00 0 
+7cc4d8196000-7cc4d8296000 rw-p 00000000 00:00 0 
+7cc4d8296000-7cc4d8297000 ---p 00000000 00:00 0 
+7cc4d8297000-7cc4d8397000 rw-p 00000000 00:00 0 
+7cc4d8397000-7cc4d8398000 ---p 00000000 00:00 0 
+7cc4d8398000-7cc4d84eb000 rw-p 00000000 00:00 0 
+7cc4d84eb000-7cc4d89c2000 ---p 00000000 00:00 0 
+7cc4d89c2000-7cc4d89ec000 rw-p 00000000 00:00 0 
+7cc4d89ec000-7cc4d8c57000 ---p 00000000 00:00 0 
+7cc4d8c57000-7cc4d8c69000 rw-p 00000000 00:00 0 
+7cc4d8c69000-7cc4d9018000 ---p 00000000 00:00 0 
+7cc4d9018000-7cc4d9019000 ---p 00000000 00:00 0 
+7cc4d9019000-7cc4d901c000 ---p 00000000 00:00 0 
+7cc4d901c000-7cc4d9119000 rw-p 00000000 00:00 0 
+7cc4d9119000-7cc4d9127000 r--p 00000000 08:07 570214                     /usr/lib/x86_64-linux-gnu/libm.so.6
+7cc4d9127000-7cc4d91a3000 r-xp 0000e000 08:07 570214                     /usr/lib/x86_64-linux-gnu/libm.so.6
+7cc4d91a3000-7cc4d91fe000 r--p 0008a000 08:07 570214                     /usr/lib/x86_64-linux-gnu/libm.so.6
+7cc4d91fe000-7cc4d91ff000 r--p 000e4000 08:07 570214                     /usr/lib/x86_64-linux-gnu/libm.so.6
+7cc4d91ff000-7cc4d9200000 rw-p 000e5000 08:07 570214                     /usr/lib/x86_64-linux-gnu/libm.so.6
+7cc4d9200000-7cc4d9ec3000 r-xp 00000000 08:07 1192817                    /usr/java/jre1.8.0_411/lib/amd64/server/libjvm.so
+7cc4d9ec3000-7cc4d9f5b000 r--p 00cc2000 08:07 1192817                    /usr/java/jre1.8.0_411/lib/amd64/server/libjvm.so
+7cc4d9f5b000-7cc4d9f8c000 rw-p 00d5a000 08:07 1192817                    /usr/java/jre1.8.0_411/lib/amd64/server/libjvm.so
+7cc4d9f8c000-7cc4d9fc8000 rw-p 00000000 00:00 0 
+7cc4d9fc8000-7cc4d9fc9000 r--s 00006000 08:12 971667                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-html-parser-0.19.1.jar
+7cc4d9fc9000-7cc4d9fdf000 r--s 00241000 08:12 971758                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/pdfbox-2.0.4.jar
+7cc4d9fdf000-7cc4da000000 rw-p 00000000 00:00 0 
+7cc4da000000-7cc4da028000 r--p 00000000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da028000-7cc4da1bd000 r-xp 00028000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da1bd000-7cc4da215000 r--p 001bd000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da215000-7cc4da216000 ---p 00215000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da216000-7cc4da21a000 r--p 00215000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da21a000-7cc4da21c000 rw-p 00219000 08:07 570208                     /usr/lib/x86_64-linux-gnu/libc.so.6
+7cc4da21c000-7cc4da229000 rw-p 00000000 00:00 0 
+7cc4da229000-7cc4da22a000 r--s 00004000 08:12 971744                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/morfologik-fsa-2.1.3.jar
+7cc4da22a000-7cc4da22c000 r--s 00000000 08:12 971675                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-pdf-converter-0.19.1.jar
+7cc4da22c000-7cc4da22e000 r--s 0000d000 08:12 971665                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-tables-0.19.1.jar
+7cc4da22e000-7cc4da22f000 r--s 00001000 08:12 971676                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-profile-pegdown-0.19.1.jar
+7cc4da22f000-7cc4da230000 r--s 00001000 08:12 971652                     /home/delldmi/.vscode/extensions/adamvoss.vscode-languagetool-3.8.0/lib/languagetool-languageserver/build/install/languagetool-languageserver/lib/flexmark-ext-autolink-0.19.1.jar
+7cc4da230000-7cc4da233000 r--s 0001c000 08:07 1192724                    /usr/java/jre1.8.0_411/lib/jce.jar
+7cc4da233000-7cc4da234000 r--p 00000000 07:10 280                        /snap/code/164/usr/lib/locale/agr_PE/LC_NUMERIC
+7cc4da234000-7cc4da235000 r--p 00000000 07:10 5477                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_TIME
+7cc4da235000-7cc4da236000 r--p 00000000 07:10 5472                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_MONETARY
+7cc4da236000-7cc4da237000 r--p 00000000 07:10 5471                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+7cc4da237000-7cc4da238000 r--p 00000000 07:10 197                        /snap/code/164/usr/lib/locale/aa_DJ.utf8/LC_PAPER
+7cc4da238000-7cc4da239000 r--p 00000000 07:10 279                        /snap/code/164/usr/lib/locale/agr_PE/LC_NAME
+7cc4da239000-7cc4da23a000 r--p 00000000 07:10 5465                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_ADDRESS
+7cc4da23a000-7cc4da23b000 r--p 00000000 07:10 5476                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_TELEPHONE
+7cc4da23b000-7cc4da23c000 r--p 00000000 07:10 191                        /snap/code/164/usr/lib/locale/aa_DJ.utf8/LC_MEASUREMENT
+7cc4da23c000-7cc4da243000 r--s 00000000 08:07 700895                     /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7cc4da243000-7cc4da26b000 rw-p 00000000 00:00 0 
+7cc4da26b000-7cc4da286000 r-xp 00000000 08:07 1192758                    /usr/java/jre1.8.0_411/lib/amd64/libzip.so
+7cc4da286000-7cc4da287000 r--p 0001a000 08:07 1192758                    /usr/java/jre1.8.0_411/lib/amd64/libzip.so
+7cc4da287000-7cc4da288000 rw-p 0001b000 08:07 1192758                    /usr/java/jre1.8.0_411/lib/amd64/libzip.so
+7cc4da288000-7cc4da2b3000 r-xp 00000000 08:07 1192757                    /usr/java/jre1.8.0_411/lib/amd64/libjava.so
+7cc4da2b3000-7cc4da2b4000 r--p 0002a000 08:07 1192757                    /usr/java/jre1.8.0_411/lib/amd64/libjava.so
+7cc4da2b4000-7cc4da2b6000 rw-p 0002b000 08:07 1192757                    /usr/java/jre1.8.0_411/lib/amd64/libjava.so
+7cc4da2b6000-7cc4da2b7000 r--p 00000000 08:07 570236                     /usr/lib/x86_64-linux-gnu/librt.so.1
+7cc4da2b7000-7cc4da2b8000 r-xp 00001000 08:07 570236                     /usr/lib/x86_64-linux-gnu/librt.so.1
+7cc4da2b8000-7cc4da2b9000 r--p 00002000 08:07 570236                     /usr/lib/x86_64-linux-gnu/librt.so.1
+7cc4da2b9000-7cc4da2ba000 r--p 00002000 08:07 570236                     /usr/lib/x86_64-linux-gnu/librt.so.1
+7cc4da2ba000-7cc4da2bb000 rw-p 00003000 08:07 570236                     /usr/lib/x86_64-linux-gnu/librt.so.1
+7cc4da2bb000-7cc4da2bd000 rw-p 00000000 00:00 0 
+7cc4da2bd000-7cc4da2be000 r--p 00000000 08:07 570212                     /usr/lib/x86_64-linux-gnu/libdl.so.2
+7cc4da2be000-7cc4da2bf000 r-xp 00001000 08:07 570212                     /usr/lib/x86_64-linux-gnu/libdl.so.2
+7cc4da2bf000-7cc4da2c0000 r--p 00002000 08:07 570212                     /usr/lib/x86_64-linux-gnu/libdl.so.2
+7cc4da2c0000-7cc4da2c1000 r--p 00002000 08:07 570212                     /usr/lib/x86_64-linux-gnu/libdl.so.2
+7cc4da2c1000-7cc4da2c2000 rw-p 00003000 08:07 570212                     /usr/lib/x86_64-linux-gnu/libdl.so.2
+7cc4da2c2000-7cc4da2d9000 r-xp 00000000 08:07 1192820                    /usr/java/jre1.8.0_411/lib/amd64/jli/libjli.so
+7cc4da2d9000-7cc4da2da000 r--p 00016000 08:07 1192820                    /usr/java/jre1.8.0_411/lib/amd64/jli/libjli.so
+7cc4da2da000-7cc4da2db000 rw-p 00017000 08:07 1192820                    /usr/java/jre1.8.0_411/lib/amd64/jli/libjli.so
+7cc4da2db000-7cc4da2dc000 r--p 00000000 08:07 570232                     /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7cc4da2dc000-7cc4da2dd000 r-xp 00001000 08:07 570232                     /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7cc4da2dd000-7cc4da2de000 r--p 00002000 08:07 570232                     /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7cc4da2de000-7cc4da2df000 r--p 00002000 08:07 570232                     /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7cc4da2df000-7cc4da2e0000 rw-p 00003000 08:07 570232                     /usr/lib/x86_64-linux-gnu/libpthread.so.0
+7cc4da2e0000-7cc4da2e1000 r--p 00000000 07:10 5468                       /snap/code/164/usr/lib/locale/pt_BR.utf8/LC_IDENTIFICATION
+7cc4da2e1000-7cc4da2e9000 rw-s 00000000 08:07 1837411                    /tmp/hsperfdata_delldmi/1281012
+7cc4da2e9000-7cc4da2ea000 rw-p 00000000 00:00 0 
+7cc4da2ea000-7cc4da2f7000 r-xp 00000000 08:07 1192743                    /usr/java/jre1.8.0_411/lib/amd64/libverify.so
+7cc4da2f7000-7cc4da2f9000 r--p 0000c000 08:07 1192743                    /usr/java/jre1.8.0_411/lib/amd64/libverify.so
+7cc4da2f9000-7cc4da2fa000 rw-p 0000e000 08:07 1192743                    /usr/java/jre1.8.0_411/lib/amd64/libverify.so
+7cc4da2fa000-7cc4da2fc000 rw-p 00000000 00:00 0 
+7cc4da2fc000-7cc4da2fe000 r--p 00000000 08:07 570202                     /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7cc4da2fe000-7cc4da328000 r-xp 00002000 08:07 570202                     /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7cc4da328000-7cc4da333000 r--p 0002c000 08:07 570202                     /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7cc4da333000-7cc4da334000 r--p 00000000 00:00 0 
+7cc4da334000-7cc4da336000 r--p 00037000 08:07 570202                     /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7cc4da336000-7cc4da338000 rw-p 00039000 08:07 570202                     /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+7ffc26c90000-7ffc26cb2000 rw-p 00000000 00:00 0                          [stack]
+7ffc26ccb000-7ffc26ccf000 r--p 00000000 00:00 0                          [vvar]
+7ffc26ccf000-7ffc26cd1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+
+[error occurred during error reporting (printing VM options), id 0x7]
+
+Environment Variables:
+
+[error occurred during error reporting (printing environment variables), id 0x7]
+
+Signal Handlers:
+
+[error occurred during error reporting (printing signal handlers), id 0x7]
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Zorin
+DISTRIB_RELEASE=17
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Zorin OS 17.1"
+
+uname:Linux 6.5.0-41-generic #41~22.04.2-Ubuntu SMP PREEMPT_DYNAMIC Mon Jun  3 11:32:55 UTC 2 x86_64
+libc:glibc 2.35 NPTL 2.35 
+rlimit: STACK 8192k, CORE 0k, NPROC 62899, NOFILE 1048576, AS infinity
+load average:1,50 0,96 0,94
+
+/proc/meminfo:
+MemTotal:       16236588 kB
+MemFree:        12315932 kB
+MemAvailable:   14293728 kB
+Buffers:          116276 kB
+Cached:          1911344 kB
+SwapCached:        23408 kB
+Active:          1719192 kB
+Inactive:        1474884 kB
+Active(anon):     987628 kB
+Inactive(anon):   243644 kB
+Active(file):     731564 kB
+Inactive(file):  1231240 kB
+Unevictable:         188 kB
+Mlocked:              64 kB
+SwapTotal:      15669244 kB
+SwapFree:       14992044 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:                44 kB
+Writeback:             0 kB
+AnonPages:       1103500 kB
+Mapped:           154704 kB
+Shmem:             65468 kB
+KReclaimable:     413620 kB
+Slab:             616732 kB
+SReclaimable:     413620 kB
+SUnreclaim:       203112 kB
+KernelStack:        7884 kB
+PageTables:        19360 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    23787536 kB
+Committed_AS:    3150352 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       40880 kB
+VmallocChunk:          0 kB
+Percpu:             4656 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      291628 kB
+DirectMap2M:     9015296 kB
+DirectMap1G:     7340032 kB
+
+container (cgroup) information:
+container_type: cgroupv2
+cpu_cpuset_cpus: not supported
+cpu_memory_nodes: not supported
+
+[error occurred during error reporting (printing OS information), id 0x7]
+
+CPU:total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 158 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3300.001
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3299.997
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3299.998
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3300.001
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page
+[error occurred during error reporting (printing memory info), id 0x7]
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.411-b09) for linux-amd64 JRE (1.8.0_411-b09), built on Mar 13 2024 07:23:54 by "java_re" with gcc 11.2.0
+
+
+[error occurred during error reporting (printing date and time), id 0x7]
+
