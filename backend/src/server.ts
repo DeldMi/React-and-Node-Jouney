@@ -2,24 +2,27 @@ import fastify from 'fastify'
 import cors from '@fastify/cors'
 import { createTrip } from './routes/create-trip'
 import {
-     serializerCompiler,
-     validatorCompiler,
+  serializerCompiler,
+  validatorCompiler,
 } from 'fastify-type-provider-zod'
 import { confirmTrip } from './routes/confirm-trip'
 import { confirmParticipants } from './routes/confirm-participant'
 import { createActivity } from './routes/create-activity'
-
-import { getLinks } from './routes/get-links'
-
-import { createLink } from './routes/create-linls'
 import { getActivities } from './routes/get-activitys'
+import { createLink } from './routes/create-links'
+import { getLinks } from './routes/get-links'
+import { getParticipants } from './routes/get-participants'
+import { createInvite } from './routes/create-invite'
+import { updateTrip } from './routes/update-trip'
+import { getTripDetails } from './routes/get-trip-details'
+import { getParticipant } from './routes/get-participant'
 import { errorHandler } from './error-handler'
 import { env } from './env'
 
 const app = fastify()
 
 app.register(cors, {
-     origin: '*',
+  origin: `${ env.CORS_ORIGIN }`,
 })
 
 app.setValidatorCompiler(validatorCompiler)
@@ -34,12 +37,12 @@ app.register(createActivity)
 app.register(getActivities)
 app.register(createLink)
 app.register(getLinks)
-
-// app.get('*', async (request, reply) => {
-//      return "Erro 404!"
-// })
-
+app.register(getParticipants)
+app.register(createInvite)
+app.register(updateTrip)
+app.register(getTripDetails)
+app.register(getParticipant)
 
 app.listen({ port: env.PORT }).then(() => {
-     console.log('Server running!')
+  console.log('Server running!')
 })

@@ -7,6 +7,7 @@ import { getMailClient } from '../lib/mail'
 import { dayjs } from '../lib/dayjs'
 import { ClientError } from '../errors/client-error'
 import { env } from '../env'
+import { errorHandler } from '../error-handler';
 
 export async function createTrip(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().post(
@@ -14,7 +15,7 @@ export async function createTrip(app: FastifyInstance) {
     {
       schema: {
         body: z.object({
-          destination: z.string().min(4),
+          destination: z.string({required_error:"destination *"}).min(4),
           starts_at: z.coerce.date(),
           ends_at: z.coerce.date(),
           owner_name: z.string(),
